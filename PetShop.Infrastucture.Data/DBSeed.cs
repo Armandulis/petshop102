@@ -71,7 +71,41 @@ namespace PetShop.Infrastucture.Data
 
 
             });
+            
+
+            var password = "Password";
+
+            byte[] passwordHashA, passwordSaltA, passwordHashAdmin, passwordSaltAdmin;
+
+            CreatePasswordHash(password, out passwordHashA, out passwordSaltA);
+            CreatePasswordHash(password, out passwordHashAdmin, out passwordSaltAdmin);
+
+            ctx.User.Add(new User()
+            {
+                Username = "Armandas",
+                PasswordHash = passwordHashA,
+                PasswordSalt = passwordSaltA,
+                isAdmin = false
+            });
+
+            ctx.User.Add(new User()
+            {
+                Username = "Admin",
+                PasswordHash = passwordHashAdmin,
+                PasswordSalt = passwordSaltAdmin    ,
+                isAdmin = true
+            });
+
             ctx.SaveChanges();
+        }
+
+        private static void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
+        {
+            using (var hmac = new System.Security.Cryptography.HMACSHA512())
+            {
+                passwordSalt = hmac.Key;
+                passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+            }
         }
     }
 }

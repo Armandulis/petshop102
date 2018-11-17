@@ -4810,6 +4810,16 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Login/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Login.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Login.dll": {}
+        }
+      },
       "PetShop.Core/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -12654,6 +12664,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "Login/1.0.0": {
+      "type": "project",
+      "path": "../Login/Login.csproj",
+      "msbuildProject": "../Login/Login.csproj"
+    },
     "PetShop.Core/1.0.0": {
       "type": "project",
       "path": "../PetShop.Core/PetShop.Core.csproj",
@@ -12673,6 +12688,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "EntityFramework.SqlServerCompact >= 6.2.0",
+      "Login >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.EntityFrameworkCore.Sqlite >= 2.1.4",
       "Microsoft.EntityFrameworkCore.Sqlite.Core >= 2.1.4",
@@ -12714,6 +12730,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "C:\\Users\\Arman\\Desktop\\petshop\\Login\\Login.csproj": {
+              "projectPath": "C:\\Users\\Arman\\Desktop\\petshop\\Login\\Login.csproj"
+            },
             "C:\\Users\\Arman\\Desktop\\petshop\\PetShop.Core.Entity\\PetShop.Core.Entity.csproj": {
               "projectPath": "C:\\Users\\Arman\\Desktop\\petshop\\PetShop.Core.Entity\\PetShop.Core.Entity.csproj"
             },

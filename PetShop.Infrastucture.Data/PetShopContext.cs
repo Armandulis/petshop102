@@ -19,5 +19,6 @@ namespace PetShop.Infrastucture.Data
 
         public DbSet<Owner> Owner { get; set; }
         public DbSet<Pet> Pet { get; set; }
+        public DbSet<User> User { get; set; }
     }
 }
