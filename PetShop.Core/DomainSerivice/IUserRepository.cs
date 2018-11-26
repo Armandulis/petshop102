@@ -8,7 +8,7 @@ namespace PetShop.Core.DomainSerivice
     public interface IUserRepository
     {
         IEnumerable<User> GetAll();
-        User Get(int id);
+        User Get(int id); 
         void Add(User entity);
         void Edit(User entity);
         void Remove(int id);

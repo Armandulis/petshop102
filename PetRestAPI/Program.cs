@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 namespace PetRestAPI
@@ -14,6 +15,7 @@ namespace PetRestAPI
     {
         public static void Main(string[] args)
         {
+           
             CreateWebHostBuilder(args).Build().Run();
         }
 

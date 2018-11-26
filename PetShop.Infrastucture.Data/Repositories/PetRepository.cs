@@ -50,18 +50,9 @@ namespace PetShop.Infrastucture.Data.Repositories
 
         public Pet PetUpdate(Pet pet)
         {
-            var oldPet = GetByID(pet.ID);
-            if (oldPet != null) {
-                oldPet.Name = pet.Name;
-                oldPet.PreviousOwner = pet.PreviousOwner;
-                oldPet.Price = pet.Price;
-                oldPet.SoldDate = pet.SoldDate;
-                oldPet.Color = pet.Color;
-                oldPet.Birthdate = pet.Birthdate;
-                return oldPet;
-            }
-            else return null;
-
+            _ctx.Pet.Update(pet);
+            _ctx.SaveChanges();
+            return pet;
         }
     }
 }

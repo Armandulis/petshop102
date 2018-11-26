@@ -10,18 +10,6 @@ C:\Users\Arman\source\repos\CompulsoryPetShopApp\PetShop.Core\obj\Debug\netstand
 C:\Users\Arman\source\repos\CompulsoryPetShopApp\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.csproj.CopyComplete
 C:\Users\Arman\source\repos\CompulsoryPetShopApp\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.dll
 C:\Users\Arman\source\repos\CompulsoryPetShopApp\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.pdb
-C:\Users\Arman\Desktop\petshop\PetShop.Core\bin\Debug\netstandard2.0\PetShop.Core.deps.json
-C:\Users\Arman\Desktop\petshop\PetShop.Core\bin\Debug\netstandard2.0\PetShop.Core.dll
-C:\Users\Arman\Desktop\petshop\PetShop.Core\bin\Debug\netstandard2.0\PetShop.Core.pdb
-C:\Users\Arman\Desktop\petshop\PetShop.Core\bin\Debug\netstandard2.0\PetShop.Core.Entity.dll
-C:\Users\Arman\Desktop\petshop\PetShop.Core\bin\Debug\netstandard2.0\PetShop.Core.Entity.pdb
-C:\Users\Arman\Desktop\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.csprojAssemblyReference.cache
-C:\Users\Arman\Desktop\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.csproj.CoreCompileInputs.cache
-C:\Users\Arman\Desktop\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.AssemblyInfoInputs.cache
-C:\Users\Arman\Desktop\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.AssemblyInfo.cs
-C:\Users\Arman\Desktop\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.csproj.CopyComplete
-C:\Users\Arman\Desktop\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.dll
-C:\Users\Arman\Desktop\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.pdb
 C:\Users\Arman\Desktop\Computer Science\CS\petshop\PetShop.Core\bin\Debug\netstandard2.0\PetShop.Core.deps.json
 C:\Users\Arman\Desktop\Computer Science\CS\petshop\PetShop.Core\bin\Debug\netstandard2.0\PetShop.Core.dll
 C:\Users\Arman\Desktop\Computer Science\CS\petshop\PetShop.Core\bin\Debug\netstandard2.0\PetShop.Core.pdb
@@ -34,3 +22,15 @@ C:\Users\Arman\Desktop\Computer Science\CS\petshop\PetShop.Core\obj\Debug\netsta
 C:\Users\Arman\Desktop\Computer Science\CS\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.csproj.CopyComplete
 C:\Users\Arman\Desktop\Computer Science\CS\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.dll
 C:\Users\Arman\Desktop\Computer Science\CS\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.pdb
+C:\Users\Arman\Desktop\petshop\PetShop.Core\bin\Debug\netstandard2.0\PetShop.Core.deps.json
+C:\Users\Arman\Desktop\petshop\PetShop.Core\bin\Debug\netstandard2.0\PetShop.Core.dll
+C:\Users\Arman\Desktop\petshop\PetShop.Core\bin\Debug\netstandard2.0\PetShop.Core.pdb
+C:\Users\Arman\Desktop\petshop\PetShop.Core\bin\Debug\netstandard2.0\PetShop.Core.Entity.dll
+C:\Users\Arman\Desktop\petshop\PetShop.Core\bin\Debug\netstandard2.0\PetShop.Core.Entity.pdb
+C:\Users\Arman\Desktop\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.csprojAssemblyReference.cache
+C:\Users\Arman\Desktop\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.csproj.CoreCompileInputs.cache
+C:\Users\Arman\Desktop\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.AssemblyInfoInputs.cache
+C:\Users\Arman\Desktop\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.AssemblyInfo.cs
+C:\Users\Arman\Desktop\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.csproj.CopyComplete
+C:\Users\Arman\Desktop\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.dll
+C:\Users\Arman\Desktop\petshop\PetShop.Core\obj\Debug\netstandard2.0\PetShop.Core.pdb

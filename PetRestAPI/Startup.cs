@@ -22,22 +22,25 @@ namespace PetRestAPI
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment Environment)
         {
             Configuration = configuration;
-            JWTSecurityKey.SetSecret("a secret that needs to be at least 16 characters long");
+            env = Environment;
         }
 
         public IConfiguration Configuration { get; }
+        public IHostingEnvironment env { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
             {
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
+                    //true if we use other sources, facebook, google
                     ValidateAudience = false,
                     //ValidAudience = "TodoApiClient",
                     ValidateIssuer = false,
@@ -49,7 +52,17 @@ namespace PetRestAPI
                 };
             });
             
-            
+            if (env.IsDevelopment())
+            {
+            }
+            else
+            {
+                // Azure SQL database:
+                services.AddDbContext<PetShopContext>(opt =>
+                         opt.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
+            } 
+
+
 
 
             /*services.AddDbContext<PetShopContext>(
@@ -72,12 +85,16 @@ namespace PetRestAPI
                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
             });
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            
+            services.AddMvc();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+
             if (env.IsDevelopment())
             {
 
@@ -87,9 +104,12 @@ namespace PetRestAPI
                     InitialiseDB.SeedDB(ctx);
                 } 
             }
-            else {
+            else
+            {
                 app.UseHsts();
+
             }
+            app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseMvc();
         }

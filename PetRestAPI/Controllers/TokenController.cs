@@ -68,7 +68,7 @@ namespace PetRestAPI.Controllers
 
             var token = new JwtSecurityToken(
                new JwtHeader(new SigningCredentials(
-                   JWTSecurityKey.Key,
+                   JWTSecurityKey.Key, //specifies the token's key
                    SecurityAlgorithms.HmacSha256)),
                new JwtPayload(null, // issuer - not needed (ValidateIssuer = false)
                               null, // audience - not needed (ValidateAudience = false)

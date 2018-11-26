@@ -9,7 +9,7 @@ using PetShop.Core.Entity;
 
 namespace PetRestAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("/[controller]")]
     [ApiController]
     public class PetsController : ControllerBase
     {

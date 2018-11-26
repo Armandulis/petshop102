@@ -16,26 +16,26 @@ namespace PetShop.Infrastucture.Data
             {
                 Address = "asd",
                 Email = "asd@Gmakil",
-                FirstName = "Armandas",
-                LastName = "Bruzas",
-                PhoneNumber = "84654"
+                FirstName = "Patric",
+                LastName = "no",
+                PhoneNumber = "This is patric"
 
             }).Entity;
             var owner2 = ctx.Owner.Add(new Owner()
             {
                 Address = "asd",
                 Email = "asd@Gmakil",
-                FirstName = "Armandas",
-                LastName = "Bruzas",
-                PhoneNumber = "84654"
+                FirstName = "Obama",
+                LastName = "michel",
+                PhoneNumber = "9486"
             }).Entity;
             var owner1 = ctx.Owner.Add(new Owner()
             {
-                Address = "asd",
-                Email = "asd@Gmakil",
-                FirstName = "Armandas",
-                LastName = "Bruzas",
-                PhoneNumber = "84654"
+                Address = "Big M",
+                Email = "Big m@Gmakil",
+                FirstName = "Big",
+                LastName = "M",
+                PhoneNumber = "4520"
 
             }).Entity;
             ctx.Pet.Add(new Pet()

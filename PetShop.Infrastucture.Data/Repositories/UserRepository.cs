@@ -41,6 +41,7 @@ namespace PetShop.Infrastucture.Data.Repositories
 
         public void Remove(int id)
         {
+
             var item = _ctx.User.FirstOrDefault(b => b.Id == id);
             _ctx.User.Remove(item);
             _ctx.SaveChanges();

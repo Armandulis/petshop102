@@ -82,7 +82,7 @@ namespace PetShop.Core.ApplicationService
             petToUpdate.Type = type;
             petToUpdate.Price = price;
 
-             return _petRepo.PetUpdate(petToUpdate); ;
+             return _petRepo.PetUpdate(petToUpdate); 
         }
         
     }

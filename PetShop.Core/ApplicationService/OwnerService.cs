@@ -71,7 +71,7 @@ namespace PetShop.Core.ApplicationService
                 Email = email
             };
 
-            return owner;
+            return _ownerRepo.OwnerUpdate(owner);
         }
     }
 }

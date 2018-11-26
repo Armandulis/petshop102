@@ -47,7 +47,9 @@ namespace PetShop.Infrastucture.Data.Repositories
 
         public Owner OwnerUpdate(Owner owner)
         {
-            return null;
+            _ctx.Owner.Update(owner);
+            _ctx.SaveChanges();
+            return owner;
         }
     }
-}
+} 

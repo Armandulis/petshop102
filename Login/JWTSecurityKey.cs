@@ -7,7 +7,7 @@ namespace Login
 {
     public class JWTSecurityKey
     {
-        private static byte[] secretBytes = Encoding.UTF8.GetBytes("A secret for HmacSha256");
+        private static byte[] secretBytes = Encoding.UTF8.GetBytes("AsecretforHmacSha256");
 
         public static SymmetricSecurityKey Key
         {
